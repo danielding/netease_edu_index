@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta charset="UTF-8">
     <title>网易教育产品部-首页</title>
+
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <script src="scripts/util.js"></script>
@@ -16,29 +17,32 @@
     <meta name="description" content="" />
 
     <!--[if lt IE 9]>
-        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="scripts/html5.js"></script>
     <![endif]-->
+
 </head>
 <body>
     <section class="info-wrapper" style="display: none">
         <div class="info container">
             <p class="message">网易云课堂微专业，帮助你掌握专业技能，令你求职或加薪多一份独特优势！&nbsp;&nbsp;<a href="#" class="link">立即查看></a></p>
-            <a class="hover close" href="javascript:void(0)" id="close" ><span class="icon">&#xe601;</span> 不再提醒</a>
+            <a class="info-close" href="javascript:void(0)" id="close" ><span class="icon">&#xe601;</span> 不再提醒</a>
         </div>
     </section>
     <header class="header-wrapper">
         <div class="container">
-            <h1 class="logo"><a href="#"><img src="images/logo.jpg" alt="网易教育产品部"></a></h1>
+            <div class="logo">
+                <a href="#" title="网易教育产品部"><img src="images/logo.jpg" alt="网易教育产品部"></a>
+            </div>
             <section class="follow-wrapper">
-                <button class="follow" id="follow"><span class="icon icon-small">&#xe605;</span> 关注</button>&nbsp;&nbsp;
+                <button class="follow" id="follow"><span class="icon">&#xe605;</span> 关注</button>&nbsp;&nbsp;
                 <span id="followed" class="followed" style="display:none;"><span class="icon">&#xe600;</span> 已关注 | <a class="cancel link" id="unfollow" href="javascript:void(0)">取消</a></span>
                 <span class="follower">粉丝 45</span>
             </section>
             <nav class="main-nav">
-                <a class="hover" href="http://open.163.com/" target="_blank">网易公开课</a>
-                <a class="hover" href="http://study.163.com/" target="_blank">云课堂</a>
-                <a class="hover" href="http://www.icourse163.org/" target="_blank">中国大学MOOC</a>
-                <a class="hover search" href="javascript:void(0)"><span class="icon">&#xe602;</span></a>
+                <a class="nav-link" href="http://open.163.com/" target="_blank">网易公开课</a>
+                <a class="nav-link" href="http://study.163.com/" target="_blank">云课堂</a>
+                <a class="nav-link" href="http://www.icourse163.org/" target="_blank">中国大学MOOC</a>
+                <a class="nav-link search" href="javascript:void(0)"><span class="icon">&#xe602;</span></a>
             </nav>
         </div>
     </header>
@@ -66,7 +70,7 @@
                 <li class="product">
                     <div class="product-introduction">
                         <h3 class="product-title">网易公开课</h3>
-                        <p>推出国内外名校公开课，涉及广泛的学科，名校老师认真讲解深度剖析，网易视频公开课频道搭建起强有力的网络视频教学平台。</p>
+                        <p class="product-description">推出国内外名校公开课，涉及广泛的学科，名校老师认真讲解深度剖析，网易视频公开课频道搭建起强有力的网络视频教学平台。</p>
                         <img class="product-logo" src="images/product/open-course.jpg" alt="公开课">
                         <a class="link" href="http://open.163.com/" target="_blank">了解更多></a>
                     </div>
@@ -74,7 +78,7 @@
                 <li class="product">
                     <div class="product-introduction">
                         <h3 class="product-title">云课堂</h3>
-                        <p>网易旗下大型在线学习平台，该平台面向学习者提供海量免费、优质课程,创新的个性化学习体验，自由开放的交流互动环境。</p>
+                        <p class="product-description">网易旗下大型在线学习平台，该平台面向学习者提供海量免费、优质课程,创新的个性化学习体验，自由开放的交流互动环境。</p>
                         <img class="product-logo" src="images/product/cloud-course.jpg" alt="公开课">
                         <a class="link" href="http://study.163.com/" target="_blank">了解更多></a>
                     </div>
@@ -82,10 +86,9 @@
                 <li class="product">
                     <div class="product-introduction">
                         <h3 class="product-title">中国大学MOOC</h3>
-                        <p>是爱课程网携手云课堂打造的在线学习平台，每一个有提升愿望的人,都可以在这里学习中国最好的大学课程，学完还能获得认证证书。</p>
+                        <p class="product-description">是爱课程网携手云课堂打造的在线学习平台，每一个有提升愿望的人,都可以在这里学习中国最好的大学课程，学完还能获得认证证书。</p>
                         <img class="product-logo" src="images/product/mooc.jpg" alt="公开课">
                         <a class="link" href="http://www.icourse163.org/" target="_blank">了解更多></a>
-                        <span class="product-icon"><img src="" alt=""></span>
                     </div>
                 </li>
             </ul>
@@ -184,7 +187,7 @@
     <footer class="footer-wrapper">
         <div class="container">
             <div class="footer-left">
-                <h3 class="footer-logo"><img src="images/logo.jpg" alt="网易教育产品部"></h3>
+                <h3 class="footer-logo"><img src="images/logo-1.jpg" alt="网易教育产品部"></h3>
                 <p>©2014 icourse163.org 浙ICP备08114786号-1</p>
                 <p>icourses.cn 京ICP备12020869号-2 京公网安备110102000459-2</p>
             </div>

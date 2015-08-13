@@ -1,22 +1,24 @@
 body {
-    font-family: "Microsoft YaHei";
+    font: 12px/1.5 tahoma, 'microsoft yahei', '\5FAE\8F6F\96C5\9ED1';
+
     color: #333;
     background-color: #f8f8f8;
 }
-
 
 /* wrappers */
 
 .info-wrapper {
     height: 35px;
+
     line-height: 35px;
+
     background-color: #f3f3f3;
 }
 
 .header-wrapper {
     padding: 30px 0 35px 0;
+
     background-color: #fff;
-    overflow: hidden;
 }
 
 
@@ -25,119 +27,136 @@ body {
 .container {
     width: 1200px;
     margin: 0 auto;
+
     overflow: hidden;
 }
 
+/* shared styles */
 .hidden {
     display: none;
 }
 
+/* links */
+
+.rank-link {
+    text-decoration: none;
+
+    color: #666;
+}
+
+.link {
+    text-decoration: none;
+
+    color: #21a557;
+}
+
+
+.link:hover,
+.cancel:hover {
+    text-decoration: underline;
+
+    color: #21a557;
+}
+
+.nav-link:hover {
+    color: #21a557;
+}
 
 /* icons */
 
 @font-face {
-  font-family: 'iconfont';
-  src: url('//at.alicdn.com/t/font_1439442057_6818492.eot'); /* IE9*/
-  src: url('//at.alicdn.com/t/font_1439442057_6818492.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('//at.alicdn.com/t/font_1439442057_6818492.woff') format('woff'), /* chrome、firefox */
-  url('//at.alicdn.com/t/font_1439442057_6818492.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  url('//at.alicdn.com/t/font_1439442057_6818492.svg#iconfont') format('svg'); /* iOS 4.1- */
+    font-family: 'iconfont';
+
+    src: url('//at.alicdn.com/t/font_1439442057_6818492.eot'); /* IE9 */
+    src: url('//at.alicdn.com/t/font_1439442057_6818492.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('//at.alicdn.com/t/font_1439442057_6818492.woff') format('woff'), /* chrome、firefox */
+    url('//at.alicdn.com/t/font_1439442057_6818492.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('//at.alicdn.com/t/font_1439442057_6818492.svg#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .icon {
-    font-family: "iconfont";
+    font-family: 'iconfont';
     font-style: normal;
-    -webkit-font-smoothing: antialiased;
-}
 
-.icon-small {
-    font-size: 12px
+    -webkit-font-smoothing: antialiased;
 }
 
 
 /* info area*/
 
 .info {
-    font-size: 12px;
     position: relative;
+
+    font-size: 12px;
 }
 
 .message {
     margin: 0;
 }
 
-
-.rank-link {
-    color: #666;
-    text-decoration: none;
-}
-
-.link {
-    color: #21a557;
-    text-decoration: none;
-}
-
-.link:hover, .cancel:hover {
-    color: #21a557;
-    text-decoration: underline;
-}
-
-.hover:hover {
-    color: ##21a557;
-}
-
-.close {
+.info-close {
     position: absolute;
+    top: 0;
     right: 0;
-    top: 0px;
-    color: #000;
+
     text-decoration: none;
+
+    color: #000;
 }
 
 
 /* header */
 
 .logo {
-    float: left;
-    margin: 0;
+    position: relative;
+    top: 0;
+
     width: 240px;
     height: 23px;
-    position: relative;
-    top: -11px;
+    margin: 0;
+
+    float: left;
 }
 
 .logo a {
-    display: block;
     height: 23px;
+
+    display: block;
 }
 
 .follow-wrapper {
-    float: left;
     margin-left: 30px;
+
+    float: left;
 }
 
 .follow {
     height: 23px;
-    line-height: 23px;
+
     font-size: 12px;
+
     color: white;
-    background-color: #21a557;
     border: none;
+    background-color: #21a557;
 }
 .followed {
     padding: 2px 5px;
-    background-color: #f8f8f8;
+
     font-size: 12px;
+
     border: 1px solid #ccc;
     border-radius: 3px;
+    background-color: #f8f8f8;
 }
 .cancel {
-    color: #ccc;
     text-decoration: none;
+
+    color: #ccc;
 }
 
 .follower {
     font-size: 12px;
+
     color: #666;
 }
 
@@ -145,18 +164,22 @@ body {
     float: right;
 }
 
-.main-nav a {
+.nav-link {
+    margin-left: 50px;
+
     display: block;
     float: left;
-    margin-left: 50px;
-    color: #666;
+
     font-size: 16px;
+    line-height: 23px;
+
     text-decoration: none;
+
+    color: #666;
 }
 
 .search {
-    width: 20px;
-    height: 20px;
+    width: 23px;
     margin-right: 13px;
 }
 
@@ -164,8 +187,10 @@ body {
 /* slides */
 
 .slides-wrapper {
-    height: 460px;
     position: relative;
+
+    height: 460px;
+
     overflow: hidden;
 }
 
@@ -173,30 +198,34 @@ body {
     position: absolute;
     top: 0;
     left: 50%;
+
     margin-left: -826px;
 }
 
 .pointer-wrapper {
     position: absolute;
-    left: 50%;
+    z-index: 200;
     bottom: 20px;
+    left: 50%;
+
     width: 50px;
     height: 10px;
-    z-index: 200;
 }
 
 .pointer {
-    display: block;
-    float: left;
     width: 10px;
     height: 10px;
     margin-right: 10px;
-    background-color: white;
+
+    display: block;
+    float: left;
+
     border-radius: 5px;
+    background-color: white;
 }
 
 .last {
-    margin-right: 0px;
+    margin-right: 0;
 }
 
 .current {
@@ -208,36 +237,44 @@ body {
 
 .product-wrapper {
     padding: 60px 0;
+
     background-color: white;
 }
 
 .product-list {
-    overflow: hidden;
     margin: 0;
     padding: 0;
+
+    overflow: hidden;
+
     list-style: none;
 }
 
 .product {
     width: 33.333333%;
+
     float: left;
 }
 
 .product-introduction {
     position: relative;
+
     padding-left: 100px;
 }
 
 .product-title {
-    font-size: 22px;
     margin: 0;
     margin-bottom: 20px;
-}
 
+    font-size: 22px;
+}
+.product-description {
+    margin-right: 50px;
+}
 .product-logo {
     position: absolute;
     top: 10px;
-    left: 0px;
+    left: 0;
 }
 
 .introduction {
@@ -245,14 +282,17 @@ body {
 }
 
 .introduction .link {
-    display: block;
     margin-top: 32px;
+
+    display: block;
 }
 
 .environment {
+    position: relative;
+
     height: 220px;
     margin-bottom: 80px;
-    position: relative;
+
     overflow: hidden;
 }
 
@@ -260,70 +300,89 @@ body {
     position: absolute;
     top: 0;
     left: 50%;
-    margin-left: -808px
+
+    margin-left: -808px;
 }
 
 
 /* aside */
 
 .side-bar {
-    float: right;
     width: 220px;
+
+    float: right;
 }
 
 .panel {
+    margin-bottom: 20px;
     padding: 0 20px;
     padding-bottom: 20px;
-    margin-bottom: 20px;
+
     background-color: white;
+    box-shadow: 2px 2px 3px #ccc;
 }
 
 .panel-title {
     height: 55px;
-    line-height: 55px;
     margin: 0;
+
     font-size: 16px;
+    line-height: 55px;
+
     color: #333;
     border-bottom: 1px solid #ddd;
 }
 
-.panel-body {}
 
 .rank {
     position: relative;
+
     margin: 0;
     padding: 0;
+
     list-style: none;
 }
 
 .rank-title,
 .course-title {
-    font-size: 13px;
     margin: 0;
-    line-height: 20px;
+
     overflow: hidden;
-    text-overflow: ellipsis;
+
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 20px;
+
     white-space: nowrap;
+    text-overflow: ellipsis;
+
+    color: #333;
+}
+.course-title {
+    padding: 5px 5px;
 }
 
 .rank-item {
-    padding-left: 60px;
     position: relative;
-    margin-top: 20px;
+
     height: 50px;
+    margin-top: 20px;
+    padding-left: 60px;
 }
 
 .small-cover {
     position: absolute;
     top: 0;
-    left: 0px;
+    left: 0;
+
     width: 50px;
     height: 50px;
 }
 
 .count {
-    font-size: 10px;
     margin-bottom: 0;
+
+    font-size: 10px;
 }
 
 
@@ -334,26 +393,32 @@ body {
 }
 
 .tab-item {
-    display: block;
-    float: left;
     width: 200px;
     height: 50px;
-    line-height: 50px;
+
+    display: block;
+    float: left;
+
     font-size: 20px;
-    text-decoration: none;
+    line-height: 50px;
+
     text-align: center;
+    text-decoration: none;
+
     color: #333;
     background-color: white;
 }
 
 .active {
-    background-color: #39a030;
-    color: white;
     cursor: default;
+
+    color: white;
+    background-color: #39a030;
 }
 
 .course-list {
     width: 980px;
+
     float: left;
 }
 
@@ -362,18 +427,27 @@ body {
 }
 
 .card {
-    display: block;
+    position: relative;
+
     width: 225px;
     height: 230px;
-    position: relative;
-    float: left;
     margin-right: 20px;
     margin-bottom: 20px;
+
+    display: block;
+    float: left;
+
     text-decoration: none;
+
     background-color: white;
+    box-shadow: 2px 2px 3px #ccc;
 }
 
-a.card:hover .course-title {
+.card:hover {
+    box-shadow: 2px 2px 3px #aaa;
+}
+
+.card:hover .course-title {
     color: #39a030;
 }
 
@@ -385,10 +459,13 @@ a.card:hover .course-title {
     position: absolute;
     top: 0;
     left: 0;
+
     width: 460px;
-    background-color: white;
-    border: 1px solid #ccc;
+
     display: none;
+
+    border: 1px solid #ccc;
+    background-color: white;
 }
 
 a:hover .card-detail {
@@ -397,6 +474,7 @@ a:hover .card-detail {
 
 .introduction {
     margin: 20px;
+
     overflow: hidden;
 }
 
@@ -405,54 +483,60 @@ a:hover .card-detail {
 }
 
 .introduction img {
-    float: left;
     margin-right: 20px;
+
+    float: left;
 }
 
 .description {
-    clear: both;
     margin: 20px 0 0 0;
     padding: 20px;
+
+    clear: both;
+
     background-color: #f8f8f8;
 }
 
-.course-title {
-    font-size: 12px;
-    color: #333;
-    margin: 0;
-    padding: 5px 5px;
-}
-
 .author {
-    font-size: 12px;
-    color: #999;
     margin: 0;
-    padding: 0px 5px;
+    padding: 0 5px;
+
+    font-size: 12px;
+
+    color: #999;
 }
 
 .learner-count {
+    margin: 5px;
+    padding: 0 3px 1px 3px;
+
     display: inline-block;
-    margin: 10px 5px;
-    padding: 0px 3px 1px 3px;
+
     font-size: 12px;
+
     color: #999;
     border: 1px solid #ccc;
     border-radius: 3px;
 }
 
 .learner-count-1 {
+    margin: 10px 0;
+
     display: inline-block;
-    margin: 10px 0px;
+
     font-size: 12px;
+
     color: #999;
 }
 
 .price {
+    margin: 0;
+    padding: 0 5px;
+
     font-size: 12px;
     font-weight: bold;
+
     color: #ff3f00;
-    margin: 0;
-    padding: 0px 5px;
 }
 
 .cover {
@@ -460,127 +544,162 @@ a:hover .card-detail {
     height: 124px;
 }
 
+/* pagination */
+
 .pagination {
     margin: 0 20px 0 0;
     padding: 0;
-    list-style: none;
+
     float: right;
+
+    font-size: 14px;
+
+    list-style: none;
 }
 
 .pagination li {
-    float: left;
     height: 25px;
+
+    float: left;
+
     line-height: 25px;
 }
 
 .pagination li a {
+    padding: 0 .5em;
+
     display: block;
+
     text-decoration: none;
+
     color: #333;
-    padding: 0 0.5em;
 }
 
 .pagination li a.prev,
 .pagination li a.next,
 .pagination li a:hover {
-    background-color: #9dd8b1;
     color: white;
+    background-color: #9dd8b1;
 }
 
 .pagination li .selected {
     color: #9dd8b1;
 }
 
-.pagination li a[rel="prev"]:before {
+.pagination li a[rel='prev']:before {
     content: '\00AB';
 }
 
-.pagination li a[rel="next"]:after {
+.pagination li a[rel='next']:after {
     content: '\00BB';
 }
 
+/* footer */
+
 .footer-wrapper {
-    height: 257px;
-    padding: 60px 0;
     margin-top: 120px;
-    background-color: #2c3339;
+    padding: 80px 0;
+
     color: #a2a4a5;
+    background-color: #2c3339;
 }
 
 .footer-left {
-    width: 600px;
+    width: 500px;
+    margin-left: 50px;
+
     float: left;
     overflow: hidden;
+
+    font-size: 12.5px;
 }
 
 .footer-item {
-    float: left;
     margin-right: 60px;
+
+    float: left;
+
+    line-height: 30px;
+}
+.footer-title {
+    margin: 0;
 }
 .footer-list {
     margin: 0;
     padding: 0;
 
+    font-size: 15px;
+
+    list-style: none;
 }
 .footer-list a {
-    color: #a2a4a5;
     text-decoration: none;
+
+    color: #a2a4a5;
+}
+.footer-list a:hover {
+    text-decoration: underline;
 }
 .footer-right {
     width: 600px;
+
     float: right;
     overflow: hidden;
 }
 
-.footer-list {
-    list-style: none;
-}
 
 .video {
-    margin-left: 40px;
     width: 890px;
     height: 500px;
+    margin-left: 40px;
 }
 
 .overlay {
     position: fixed;
+    z-index: 200;
     top: 0;
     left: 0;
+
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.3);
-    z-index: 200;
+
+    background: rgba(0, 0, 0, .3);
 }
 
 .modal {
-    background-color: #fff;
     position: absolute;
-    left: 50%;
     top: 50%;
+    left: 50%;
+
+    background-color: #fff;
 }
 
 .modal-header h4 {
+    margin: 30px 40px 0 40px;
+
     font-size: 20px;
-    margin: 30px 40px 0px 40px;
 }
 .close-modal {
     position: absolute;
     top: 10px;
     right: 10px;
+
     cursor: pointer;
 }
 .modal-content input {
     width: 310px;
     height: 35px;
-    margin: 20px 40px 0px 40px;
+    margin: 20px 40px 0 40px;
 }
 .modal-footer button {
     width: 310px;
     height: 45px;
-    margin: 20px 40px 0px 40px;
+    margin: 20px 40px 0 40px;
     padding: 0;
+
     font-size: 22px;
+
     color: white;
-    background-color: #39a030;
     border: none;
+    background-color: #39a030;
 }

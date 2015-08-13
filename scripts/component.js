@@ -161,7 +161,6 @@ var EDU = EDU || {};
 
             Event.addHandler(close, 'click', function() {
                 self.modal.parentNode.style.display = 'none'
-                debugger;
             });
         },
         open: function(obj) {
@@ -172,7 +171,6 @@ var EDU = EDU || {};
             this.modal.style.height = modalHeight;
 
             this.obj = obj;
-                debugger;
             if ('content' in obj) {
                 this.modal.firstChild.nextSibling.innerHTML = obj.content;
             }
