@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <title>网易教育产品部-首页</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/util.js"></script>
+    <script src="scripts/component.js"></script>
+    <script src="scripts/md5.min.js"></script>
+    <script src="scripts/base.js"></script>
+
+    <meta name="keywords" content="云课堂,微专业,MOOC" />
+    <meta name="author" content="danielding" />
+    <meta name="description" content="" />
+
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <section class="info-wrapper" style="display: none">
+        <div class="info container">
+            <p class="message">网易云课堂微专业，帮助你掌握专业技能，令你求职或加薪多一份独特优势！&nbsp;&nbsp;<a href="#" class="link">立即查看></a></p>
+            <a class="hover close" href="javascript:void(0)" id="close" ><span class="icon">&#xe601;</span> 不再提醒</a>
+        </div>
+    </section>
+    <header class="header-wrapper">
+        <div class="container">
+            <h1 class="logo"><a href="#"><img src="images/logo.jpg" alt="网易教育产品部"></a></h1>
+            <section class="follow-wrapper">
+                <button class="follow" id="follow"><span class="icon icon-small">&#xe605;</span> 关注</button>&nbsp;&nbsp;
+                <span id="followed" class="followed" style="display:none;"><span class="icon">&#xe600;</span> 已关注 | <a class="cancel link" id="unfollow" href="javascript:void(0)">取消</a></span>
+                <span class="follower">粉丝 45</span>
+            </section>
+            <nav class="main-nav">
+                <a class="hover" href="http://open.163.com/" target="_blank">网易公开课</a>
+                <a class="hover" href="http://study.163.com/" target="_blank">云课堂</a>
+                <a class="hover" href="http://www.icourse163.org/" target="_blank">中国大学MOOC</a>
+                <a class="hover search" href="javascript:void(0)"><span class="icon">&#xe602;</span></a>
+            </nav>
+        </div>
+    </header>
+    <section class="slides-wrapper">
+        <div class="slides-container" id="slides">
+            <div class="slide" style="display: block">
+                <a href="http://open.163.com/" target="_blank"><img src="images/banner1.jpg" alt="网易公开课"></a>
+            </div>
+            <div class="slide" style="display: none">
+                <a href="http://study.163.com/" target="_blank"><img src="images/banner3.jpg" alt="云课堂"></a>
+            </div>
+            <div class="slide" style="display: none">
+                <a href="http://www.icourse163.org/" target="_blank"><img src="images/banner2.jpg" alt="中国大学MOOC"></a>
+            </div>
+        </div>
+        <div class="pointer-wrapper" id="pointers">
+            <a class="pointer current" href="javascript:void(0)" data-index="0"></a>
+            <a class="pointer" href="javascript:void(0)" data-index="1"></a>
+            <a class="pointer last" href="javascript:void(0)" data-index="2"></a>
+        </div>
+    </section>
+    <section class="product-wrapper">
+        <div class="container">
+            <ul class="product-list">
+                <li class="product">
+                    <div class="product-introduction">
+                        <h3 class="product-title">网易公开课</h3>
+                        <p>推出国内外名校公开课，涉及广泛的学科，名校老师认真讲解深度剖析，网易视频公开课频道搭建起强有力的网络视频教学平台。</p>
+                        <img class="product-logo" src="images/product/open-course.jpg" alt="公开课">
+                        <a class="link" href="http://open.163.com/" target="_blank">了解更多></a>
+                    </div>
+                </li>
+                <li class="product">
+                    <div class="product-introduction">
+                        <h3 class="product-title">云课堂</h3>
+                        <p>网易旗下大型在线学习平台，该平台面向学习者提供海量免费、优质课程,创新的个性化学习体验，自由开放的交流互动环境。</p>
+                        <img class="product-logo" src="images/product/cloud-course.jpg" alt="公开课">
+                        <a class="link" href="http://study.163.com/" target="_blank">了解更多></a>
+                    </div>
+                </li>
+                <li class="product">
+                    <div class="product-introduction">
+                        <h3 class="product-title">中国大学MOOC</h3>
+                        <p>是爱课程网携手云课堂打造的在线学习平台，每一个有提升愿望的人,都可以在这里学习中国最好的大学课程，学完还能获得认证证书。</p>
+                        <img class="product-logo" src="images/product/mooc.jpg" alt="公开课">
+                        <a class="link" href="http://www.icourse163.org/" target="_blank">了解更多></a>
+                        <span class="product-icon"><img src="" alt=""></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="environment">
+        <img src="images/environment.jpg" alt="工作环境">
+    </section>
+    <section class="container">
+        <article class="course-list">
+            <header class="tab" id="tab">
+                <a href="javascript:void(0)" class="tab-item active" data-target="product-design">产品设计</a>
+                <a href="javascript:void(0)" class="tab-item"  data-target="program-language">编程语言</a>
+            </header>
+            <section class="course" id="course">
+                <div id="product-design">
+                    <div class="card-wrapper" id="course-list">
+                        <a class="card" href="">
+                            <div class="cover">
+                                <img class="" src="images/cover.jpg" alt="">
+                            </div>
+                            <h5 class="course-title">网易前端微专业</h4>
+                            <p class="author">音频帮</p>
+                            <p class="learner-count"><span class="icon icon-mini">&#xe606;</span> 520</p>
+                            <p class="price">￥800.0</p>
+                            <div class="card-detail">
+                                <div class="introduction">
+                                    <img src="images/course/1.png" alt="">
+                                    <h4 class="title">手绘教材</h4>
+                                    <p class="learnerCount">
+                                        <span class="icon"></span>人在学
+                                    </p>
+                                    <p class="author">发布者：几分钟网</p>
+                                    <p class="classification">分类：手绘设计</p>
+                                </div>
+                                <div class="description">鼠标悬停“产品设计”或“编程语言”tab下的任意课程卡片，出现浮层显示该课程的课程详情</div>
+                            </div>
+                        </a>
+                    </div>
+                    <ol class="pagination">
+                        <li><a class="prev" href="" rel="prev"></a></li>
+                        <li><a class="selected" href="">1</a></li>
+                        <li><a href="">2</a></li>
+                        <li><a href="">3</a></li>
+                        <li><a href="">4</a></li>
+                        <li><a href="">5</a></li>
+                        <li><a class="next" href="" rel="next"></a></li>
+                    </ol>
+                </div>
+                <div class="hidden" id="program-language">
+                    <div class="card-wrapper" id="course-list">
+                        <a class="card" href="">
+                            <div class="cover">
+                                <img class="" src="images/cover.jpg" alt="">
+                            </div>
+                            <h5 class="course-title">网易前端微专业</h4>
+                            <p class="author">音频帮</p>
+                            <p class="subscriber"><span>520</span></p>
+                            <p class="price">￥800.0</p>
+                        </a>
+                    </div>
+                    <ol class="pagination">
+                        <li><a class="prev" href="" rel="prev"></a></li>
+                        <li><a href="">1</a></li>
+                        <li><a class="selected" href="">2</a></li>
+                        <li><a href="">3</a></li>
+                        <li><a href="">4</a></li>
+                        <li><a href="">5</a></li>
+                        <li><a class="next" href="" rel="next"></a></li>
+                    </ol>
+                </div>
+            </section>
+        </article>
+        <aside class="side-bar">
+            <section class="panel">
+                <h4 class="panel-title">机构结束</h4>
+                <div class="panel-body">
+                    <p style="font-size: 13px;">观看下面的视频来了解把：</p>
+                    <div><a id="video" href="javascript:void(0)"><img src="images/video.jpg" alt="宣传视频"></a></div>
+                </div>
+            </section>
+            <section class="panel">
+                <h4 class="panel-title">最热排行</h4>
+                <div class="panel-body">
+                    <ol class="rank" id="rank-list">
+                        <li class="rank-item">
+                            <img class="small-cover" src="images/small-cover.jpg" alt="">
+                            <h5 class="rank-title"><a class="rank-link" href="">舞曲解密音乐解密123</a></h5>
+                            <p class="learner-count" style="border: none"><span class="icon">&#xe606;</span> 12</p>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+        </aside>
+    </section>
+    <footer class="footer-wrapper">
+        <div class="container">
+            <div class="footer-left">
+                <h3 class="footer-logo"><img src="images/logo.jpg" alt="网易教育产品部"></h3>
+                <p>©2014 icourse163.org 浙ICP备08114786号-1</p>
+                <p>icourses.cn 京ICP备12020869号-2 京公网安备110102000459-2</p>
+            </div>
+            <div class="footer-right">
+                <div class="footer-item">
+                    <h5 class="footer-title">友情链接：</h5>
+                    <ul class="footer-list">
+                        <li><a href="#">网易公开课</a></li>
+                        <li><a href="#">网易云课堂</a></li>
+                        <li><a href="#">中国大学MOOC</a></li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h5 class="footer-title">我们：</h5>
+                    <ul class="footer-list">
+                        <li><a href="#">关于</a></li>
+                        <li><a href="#">联系</a></li>
+                        <li><a href="#">关注</a> <span class="icon">&#xe609;</span></li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h5 class="footer-title">友情链接：</h5>
+                    <ul class="footer-list">
+                        <li><a href="#">网易公开课</a></li>
+                        <li><a href="#">网易云课堂</a></li>
+                        <li><a href="#">中国大学MOOC</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
